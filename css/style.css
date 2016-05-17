@@ -1,0 +1,75 @@
+body {
+  background-color: #D4D5D9;
+  border-right: solid .65em rgba(101, 109, 118, 1);
+  border-left: solid .65em rgba(101, 109, 118, 1);
+  border-radius: 20px;
+  /* default typography */
+  color: rgba(0, 0, 0, 1);
+  font-size: 1.25em;
+  font-family: 'Playfair Display', serif;
+}
+
+hr {
+    background-color: black;
+  height : 1px;
+       }
+
+.text-center {
+    text-align: center;
+}
+
+.banner {
+  /*layout*/
+    height: 200px;
+    padding: 6em 0;
+    background-image: url(https://images.unsplash.com/photo-1430950716796-677ecbc99485);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: solid .65em rgba(101, 109, 118, 1);
+}
+
+.banner-heading {
+  line-height: 1.25em;
+  text-shadow: .75px .75px .75px #000;
+}
+
+.banner-subheading {
+  margin-top: 125px;
+}
+
+.intro-section,
+.middle-section,
+.final-section {
+  max-width: 44em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+.intro-section > p,
+.middle-section > p,
+.final section > p {
+  /* typography */
+  letter-spacing: 0.05em;
+}
+
+.drop-character {
+    float: left;
+    font-size: 50px;
+    line-height: 45px;
+    padding-right: 4px;
+    padding-left: 3px;
+}
+
+footer {
+  background-color: #989DA8;
+  height: 8%;
+}
+
+.footer-content {
+  font-weight: bold;
+}
+
+.footer-contact-info > li {
+  display: inline-block;
+}
