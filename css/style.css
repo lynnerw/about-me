@@ -1,37 +1,73 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+@media only screen and (max-width: 37.5em)
+html, body {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media only screen and (max-width: 61.5em)
+body {
+}
+
+/** reset **/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, a {
     margin: 0;
     padding: 0;
     border: 0;
+    outline: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
+    background: transparent;
+    font-weight: inherit;
+}
+
+html,
+body {
+    font-family: georgia, serif;
+    font-style: normal;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    color: #111;
+    background-color: #fff;
+    height: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 /** div {
     border: 1px solid red;
 } **/
-html, body {
-    min-height: 100%;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
+
+/** All elements in the flow of the document that proceed other elements must receive a top margin of one line **/
+* + * {
+	  margin-top: 1.5em;
 }
+
 ol, ul {
     list-style: none;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-@media screen and (max-width: 61.25em)
-html {
-    font-size: 85%;
-}
-@media screen and (max-width: 71.875em)
-html {
-    font-size: 90%;
-}
+@
 html {
     position: relative;
     background-color: rgba(51, 51, 51, 1);
 }
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    padding: .15em 0;
+    font-size: 1.5em;
+}
+
 img {
     max-width: 100%;
 }
@@ -41,47 +77,52 @@ hr {
     margin: 0 auto;
 }
 .banner {
-    height: 125px%;
-    padding-top: .75rem;
+    height: 175px;
+    padding-top: .75em;
     background-color: rgba(255, 255, 255, 1);
+    font-family: 'Cormorant Upright', serif;
     color: rgba(0,0,0,1);
     text-align: center;
-    background-image: url('../images/clouds1.jpeg');
+    background-image: url('..//images/clouds1.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
 }
+
+#home.banner {
+    height: 230px;
+}
 .banner h1 {
-    color: rgba(0,0,0,1);
-    font-size: 2.5rem;
+    font-style: italic;
 }
-.banner h2 {
-    padding: .15rem 0;
-    font-size: 1.2rem;
-}
+
 .banner a {
     text-decoration: none;
 }
+
 /** begin nav **/
 .banner > .top-nav {
-    padding-top: 1.5rem;
+    padding-top: 1em;
 }
+
 .banner > .top-nav li {
-    width: 30%;
+    width: 25%;
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-  }
+}
+
 .banner > .top-nav li a {
-    padding: 1 .5rem;
-    font-size: 1.25rem;
+    font-size: 1.5em;
     color: rgba(0, 149, 255, 1);
     text-decoration: none;
 }
+
 .banner > .top-nav li a:visited {
     color: (101, 101, 101, 1);
     text-decoration: none;
 }
+
 .banner > .top-nav li a:hover {
     color: rgba(0, 0, 0, 1);
     cursor: pointer;
@@ -97,11 +138,9 @@ hr {
     height: 40%;
     padding: 2rem 0;
     background-color: white;
-    background-image: url(images/clouds1.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    margin: 0 auto;
 }
+
 .intro p {
     padding: .5rem 20%;
 }
