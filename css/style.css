@@ -21,10 +21,16 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
     font-weight: inherit;
 }
 
+@
+html {
+    position: relative;
+    background-color: rgba(51, 51, 51, 1);
+}
+
 html,
 body {
-    font-family: georgia, serif;
-    font-style: normal;
+    font-family: 'Cormorant', serif;
+/*    font-style: normal;*/
     font-size: 1.1em;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
@@ -47,129 +53,139 @@ body {
 	  margin-top: 1.5em;
 }
 
-ol, ul {
-    list-style: none;
+a {
+    color: rgba(0, 149, 255, 1);
+    text-decoration: none;
 }
+
+a:hover {
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
-@
-html {
-    position: relative;
-    background-color: rgba(51, 51, 51, 1);
-}
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.1em;
 }
 
 h2 {
-    padding: .15em 0;
+    padding: .1em 0;
     font-size: 1.5em;
 }
 
 img {
     max-width: 100%;
 }
+
 hr {
     width: 40%;
     color: rgba(0, 0, 0, 1);
     margin: 0 auto;
 }
 .banner {
-    height: 175px;
+
+    min-height: 36%;
+    max-height: 38%;
     padding-top: .75em;
-    background-color: rgba(255, 255, 255, 1);
     font-family: 'Cormorant Upright', serif;
-    color: rgba(0,0,0,1);
     text-align: center;
-    background-image: url('..//images/clouds1.jpeg');
+    background-image: url('..//images/clouds1.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
+    background-repeat: no-repeat
+    background-position: center center;
 }
 
 #home.banner {
-    height: 230px;
-}
-.banner h1 {
-    font-style: italic;
+  min-height: 40%;
+  max-height: 38%;
+/*    height: 220px;*/
 }
 
-.banner a {
-    text-decoration: none;
+.banner h1 {
+    font-style: italic;
+    color: #222;
 }
 
 /** begin nav **/
-.banner > .top-nav {
-    padding-top: 1em;
-}
+#inline-list {
+ margin: .5em;
+ width: 100%;
 
-.banner > .top-nav li {
-    width: 25%;
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-}
+ }
+ #inline-list p {
+ display: inline;
+ }
+ #inline-list ul,
+ #inline-list li {
+ display: inline;
+ margin: 0 auto;
+ padding: 0 1em;
+ font-weight: bold;
+ }
 
-.banner > .top-nav li a {
+#inline-list li a {
     font-size: 1.5em;
     color: rgba(0, 149, 255, 1);
     text-decoration: none;
 }
 
-.banner > .top-nav li a:visited {
-    color: (101, 101, 101, 1);
-    text-decoration: none;
-}
-
-.banner > .top-nav li a:hover {
+#inline-list li a:hover {
     color: rgba(0, 0, 0, 1);
     cursor: pointer;
     text-decoration: underline;
 }
-.banner > .top-nav li a.active {
-    color: rgba(76, 80, 88, 1);
+
+#inline-list li a.active {
+    color: #222;
     font-weight: 500;
 }
 /** end nav **/
+
 /** intro section **/
 .intro {
+/*  position: relative; */
     height: 40%;
-    padding: 2rem 0;
+    padding: 2em 0;
     background-color: white;
     margin: 0 auto;
 }
 
-.intro p {
-    padding: .5rem 20%;
+.intro p, ul li {
+    padding: .5em 20%;
 }
 /** end main content area **/
+
 /** begin footer **/
 .social {
-    height: 95px;
-    width: 100%;
-    padding: 0.5rem;
+/*    flex: 0 1 auto; */
+    max-height: 150px;
+/*    width: 100%;
+margin
+padding: */
     background-color: rgba(69, 69, 69, 1);
     color: rgba(255, 255, 255, 1);
-    font-size: 1rem;
+    font-size: 1em;
     text-align: center;
 }
 .social > h2 {
-    padding: 0.2rem;
-    font-size: 1.3rem;
+    padding: 0.5em 0 0;
+    font-size: 1.3em;
 }
-.social-logos > li {
-    width: 20%;
-    display: block;
+.social > li {
+    text-decoration: none;
+/*    width: 40%;*/
+/*    display: inline;*/
     margin: 0 auto;
 }
-.social-logos > li a {
-    text-decoration: none;
+.social > li a {
     color: rgba(0, 149, 255, 1);
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
-.social-logos img:hover {
+.social > img:hover {
     transform: scale(1.4);
     cursor: pointer;
 }
