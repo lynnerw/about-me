@@ -119,6 +119,7 @@ hr {
  #inline-list p {
  display: inline;
  }
+
  #inline-list ul,
  #inline-list li {
  display: inline;
@@ -148,7 +149,7 @@ hr {
 /** intro section **/
 .intro {
 /*  position: relative; */
-    height: 40%;
+/*    height: 40%; */
     padding: 2em 0;
     background-color: white;
     margin: 0 auto;
@@ -162,7 +163,7 @@ hr {
 /** begin footer **/
 .social {
 /*    flex: 0 1 auto; */
-    max-height: 150px;
+/*    max-height: 150px;
 /*    width: 100%;
 margin
 padding: */
